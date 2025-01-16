@@ -31,13 +31,32 @@ class ExactMetrics_Admin_Assets {
 	 * Class constructor.
 	 */
 	public function __construct() {
-		add_filter( 'script_loader_tag', array( $this, 'script_loader_tag' ), 99999, 3 );
+		global $wp_version;
+		// This filter will only run if WP version is greater than 6.4.0.
+		if ( version_compare( $wp_version, '6.4', '>=' ) ) {
+			add_filter( 'wp_script_attributes', array( $this, 'set_scripts_as_type_module' ), 99999 );
+		} else {
+			// Use script_loader_tag if WordPress version is lower than 5.7.0.
+			add_filter( 'script_loader_tag', array( $this, 'script_loader_tag' ), 99999, 3 );
+		}
 
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_styles' ) );
 
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_scripts' ) );
 
 		$this->get_manifest_data();
+	}
+	/**
+	 * Updates the script type for the plugin's handles to type module.
+	 *
+	 * @param array $attrs Key-value pairs representing <script> tag attributes.
+	 * @return array $attrs
+	 */
+	public function set_scripts_as_type_module( $attrs ) {
+		if ( in_array( str_replace( '-js', '', $attrs['id'] ), $this->own_handles, true ) ) {
+			$attrs['type'] = 'module';
+		}
+		return $attrs;
 	}
 
 	/**
@@ -207,6 +226,7 @@ class ExactMetrics_Admin_Assets {
 					'admin_email'                     => get_option( 'admin_email' ),
 					'site_url'                        => get_site_url(),
 					'reports_url'                     => add_query_arg( 'page', 'exactmetrics_reports', admin_url( 'admin.php' ) ),
+					'landing_pages_top_reports_url'   => add_query_arg( 'page', 'exactmetrics_reports#/top-landing-pages', admin_url( 'admin.php' ) ),
 					'ecommerce_report_url'            => add_query_arg( 'page', 'exactmetrics_reports#/ecommerce', admin_url( 'admin.php' ) ),
 					'ecommerce_settings_tab_url'      => add_query_arg( 'page', 'exactmetrics_settings#/ecommerce', admin_url( 'admin.php' ) ),
 					'first_run_notice'                => apply_filters( 'exactmetrics_settings_first_time_notice_hide', exactmetrics_get_option( 'exactmetrics_first_run_notice' ) ),
