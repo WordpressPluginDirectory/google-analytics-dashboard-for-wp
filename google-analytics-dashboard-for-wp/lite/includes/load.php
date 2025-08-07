@@ -102,4 +102,4 @@ add_action('init', function () {
 
 	// Run hook to load ExactMetrics addons.
 	do_action( 'exactmetrics_load_plugins' ); // the updater class for each addon needs to be instantiated via `exactmetrics_updater`
-});
+}, 0 );

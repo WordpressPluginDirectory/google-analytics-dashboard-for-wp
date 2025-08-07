@@ -192,6 +192,12 @@ class ExactMetrics_Admin_Assets {
 			}
 
 			$is_authed = ( ExactMetrics()->auth->is_authed() || ExactMetrics()->auth->is_network_authed() );
+			$license   = ExactMetrics()->license;
+
+			$license_info = array(
+				'type'      => $license->get_license_type(),
+				'is_agency' => $license->is_agency(),
+			);
 
 			wp_localize_script(
 				'exactmetrics-vue-script',
@@ -238,6 +244,7 @@ class ExactMetrics_Admin_Assets {
 					'timezone'                        => date( 'e' ), // phpcs:ignore WordPress.DateTime.RestrictedFunctions.date_date -- We need this to depend on the runtime timezone.
 					'funnelkit_stripe_woo_page_url'   => admin_url( 'admin.php?page=wc-settings&tab=fkwcs_api_settings' ),
 					'funnelkit_stripe_woo_nonce'      => wp_create_nonce( 'exactmetrics-funnelkit-stripe-woo-nonce' ),
+					'license'                         => $license_info,
 				)
 			);
 

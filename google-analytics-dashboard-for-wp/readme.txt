@@ -4,14 +4,14 @@ Donate link: http://www.wpbeginner.com/wpbeginner-needs-your-help/
 Tags: analytics,google analytics,google analytics dashboard,google analytics plugin,website stats
 Requires at least: 5.6.0
 Tested up to: 6.8.1
-Stable tag: 8.6.0
+Stable tag: 8.7.3
 Requires PHP: 7.2
 License: GPL v3
 
 Connects Google Analytics with your WordPress site. Displays stats to help you understand your users and site content on a whole new level!
 
 == Description ==
-The [ExactMetrics](https://exactmetrics.com?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion)ExactMetrics Google Analytics for WordPress plugin helps you properly setup all the powerful Google Analytics tracking features without writing any code or hiring a developer.
+The [ExactMetrics](https://exactmetrics.com?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion) Google Analytics for WordPress plugin helps you properly setup all the powerful Google Analytics tracking features without writing any code or hiring a developer.
 
 More importantly, over 1 million users love ExactMetrics because of our signature Google Analytics Dashboard that helps you view key Google Analytics stats right inside your WordPress dashboard.
 
@@ -131,6 +131,21 @@ You can translate Google Analytics Dashboard for WP by ExactMetrics on [translat
 4. Want more features? <a href="https://www.exactmetrics.com/?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion">Purchase ExactMetrics Pro</a>!
 
 == Changelog ==
+8.7.3: August 6, 2025
+- Fixed: Minor updates and bug fixes
+
+8.7.1: July 22, 2025
+- Fixed: Minor updates and bug fixes
+
+8.7.0: July 22, 2025
+- Updates: Misc bug fixes and updates
+
+= 8.6.2: June 26, 2025 =
+- Fixed: Minor updates and bug fixes
+
+= 8.6.1: June 12, 2025 =
+- Fixed: Minor updates and bug fixes
+
 = 8.6.0: June 11, 2025 =
 - Enhancement: Updated Forms Report to include more metrics and stats
 - Fixed: Minor updates and bug fixes
