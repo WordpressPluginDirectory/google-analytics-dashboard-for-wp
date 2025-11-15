@@ -5,7 +5,7 @@
  * Plugin URI: https://exactmetrics.com
  * Description: Displays Google Analytics Reports and Real-Time Statistics in your Dashboard. Automatically inserts the tracking code in every page of your website.
  * Author: ExactMetrics
- * Version: 8.9.0
+ * Version: 8.10.1
  * Requires at least: 5.6.0
  * Requires PHP: 7.2
  * Author URI: https://exactmetrics.com/lite/?utm_source=liteplugin&utm_medium=pluginheader&utm_campaign=authoruri&utm_content=7%2E0%2E0
@@ -55,7 +55,7 @@ final class ExactMetrics_Lite {
 	 * @var string $version Plugin version.
 	 */
 
-	public $version = '8.9.0';
+	public $version = '8.10.1';
 
 	/**
 	 * Plugin file.
@@ -298,7 +298,15 @@ final class ExactMetrics_Lite {
 				require_once EXACTMETRICS_PLUGIN_DIR . 'includes/auth.php';
 				self::$instance->auth = new ExactMetrics_Auth();
 			}
-
+   
+			return self::$instance->$key;
+		} else if ( $key === 'license' ) {
+			if ( empty( self::$instance->license ) ) {
+				// LazyLoad Licensing for Frontend
+				require_once EXACTMETRICS_PLUGIN_DIR . 'lite/includes/license-compat.php';
+				self::$instance->license = new ExactMetrics_License_Compat();
+			}
+			
 			return self::$instance->$key;
 		} else {
 			return self::$instance->$key;
@@ -502,6 +510,9 @@ final class ExactMetrics_Lite {
 			require_once EXACTMETRICS_PLUGIN_DIR . 'includes/admin/notification-event-runner.php';
 			// Add notification manual events for lite version.
 			require_once EXACTMETRICS_PLUGIN_DIR . 'includes/admin/notifications/notification-events.php';
+			
+			// Product Feed Cronjob
+			require_once EXACTMETRICS_PLUGIN_DIR . 'includes/admin/product-feed-cronjob.php';
 		}
 
 		require_once EXACTMETRICS_PLUGIN_DIR . 'includes/admin/exclude-page-metabox.php';

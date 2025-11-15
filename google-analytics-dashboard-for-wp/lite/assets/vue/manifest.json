@@ -45,11 +45,11 @@
       "_vendor-c9947851.min.js"
     ]
   },
-  "_date-intervals-bc3a4cfe.min.js": {
-    "file": "js/chunks/date-intervals-bc3a4cfe.min.js",
+  "_date-intervals-9c7e7daa.min.js": {
+    "file": "js/chunks/date-intervals-9c7e7daa.min.js",
     "imports": [
       "_vendor-c9947851.min.js",
-      "_index-ce5c3741.min.js"
+      "_index-379f8539.min.js"
     ]
   },
   "_exactmetrics-icons-497ded17.min.js": {
@@ -62,15 +62,21 @@
     ],
     "isDynamicEntry": true
   },
-  "_index-661bdf2b.min.js": {
+  "_index-379f8539.min.js": {
+    "file": "js/chunks/index-379f8539.min.js",
+    "imports": [
+      "_vendor-c9947851.min.js"
+    ]
+  },
+  "_index-c6daa0c6.min.js": {
     "assets": [
       "img/logo-ExactMetrics.png",
-      "img/logo-ExactMetrics@2x2.png",
+      "img/logo-ExactMetrics@2x.png",
       "img/logo-exactmetrics-agency.svg",
       "img/logo-exactmetrics-pro.svg",
       "img/logo-exactmetrics-plus.svg",
       "img/icon-info.svg",
-      "img/logo-ExactMetrics@2x.png",
+      "img/logo-ExactMetrics@2x2.png",
       "fonts/Roboto-Regular.woff2",
       "fonts/Roboto-Bold.woff2",
       "fonts/lato-regular-webfont.woff",
@@ -90,25 +96,19 @@
     "css": [
       "css/index.css"
     ],
-    "file": "js/chunks/index-661bdf2b.min.js",
+    "file": "js/chunks/index-c6daa0c6.min.js",
     "imports": [
       "_vendor-c9947851.min.js",
       "_ContentIconList-9bc7f2a5.min.js",
-      "_index-ce5c3741.min.js"
+      "_index-379f8539.min.js"
     ]
   },
-  "_index-ce5c3741.min.js": {
-    "file": "js/chunks/index-ce5c3741.min.js",
-    "imports": [
-      "_vendor-c9947851.min.js"
-    ]
-  },
-  "_report-table-helper-e438d40d.min.js": {
-    "file": "js/chunks/report-table-helper-e438d40d.min.js",
+  "_report-table-helper-aa1e7cd5.min.js": {
+    "file": "js/chunks/report-table-helper-aa1e7cd5.min.js",
     "imports": [
       "_vendor-c9947851.min.js",
       "_SettingsInfoTooltip-4146a64e.min.js",
-      "_date-intervals-bc3a4cfe.min.js",
+      "_date-intervals-9c7e7daa.min.js",
       "_exactmetrics-icons-497ded17.min.js"
     ]
   },
@@ -219,6 +219,10 @@
     "file": "img/about-icon-guide.png",
     "src": "src/assets/img/about-icon-guide.png"
   },
+  "src/assets/img/about-team.jpg": {
+    "file": "img/about-team.jpg",
+    "src": "src/assets/img/about-team.jpg"
+  },
   "src/assets/img/aioseo-client-logo-1.svg": {
     "file": "img/aioseo-client-logo-1.svg",
     "src": "src/assets/img/aioseo-client-logo-1.svg"
@@ -327,10 +331,6 @@
     "file": "img/about-getting-started-video.png",
     "src": "src/assets/img/exactmetrics/about-getting-started-video.png"
   },
-  "src/assets/img/exactmetrics/about-team-photo.png": {
-    "file": "img/about-team-photo.png",
-    "src": "src/assets/img/exactmetrics/about-team-photo.png"
-  },
   "src/assets/img/exactmetrics/addons-help-screen.png": {
     "file": "img/addons-help-screen.png",
     "src": "src/assets/img/exactmetrics/addons-help-screen.png"
@@ -366,6 +366,10 @@
   "src/assets/img/exactmetrics/custom-dimensions-screen.png": {
     "file": "img/custom-dimensions-screen.png",
     "src": "src/assets/img/exactmetrics/custom-dimensions-screen.png"
+  },
+  "src/assets/img/exactmetrics/custom-events-report-screen.png": {
+    "file": "img/custom-events-report-screen.png",
+    "src": "src/assets/img/exactmetrics/custom-events-report-screen.png"
   },
   "src/assets/img/exactmetrics/dimensions-report-screen.png": {
     "file": "img/dimensions-report-screen.png",
@@ -432,7 +436,7 @@
     "src": "src/assets/img/exactmetrics/loading-background.jpg"
   },
   "src/assets/img/exactmetrics/logo-ExactMetrics@2x.png": {
-    "file": "img/logo-ExactMetrics@2x.png",
+    "file": "img/logo-ExactMetrics@2x2.png",
     "src": "src/assets/img/exactmetrics/logo-ExactMetrics@2x.png"
   },
   "src/assets/img/exactmetrics/media-report-upsell.png": {
@@ -624,7 +628,7 @@
     "src": "src/assets/img/logo-ExactMetrics.png"
   },
   "src/assets/img/logo-ExactMetrics@2x.png": {
-    "file": "img/logo-ExactMetrics@2x2.png",
+    "file": "img/logo-ExactMetrics@2x.png",
     "src": "src/assets/img/logo-ExactMetrics@2x.png"
   },
   "src/assets/img/logo-ExactMetrics.png": {
@@ -1136,10 +1140,10 @@
     "file": "js/frontend.min.js",
     "imports": [
       "_vendor-c9947851.min.js",
-      "_date-intervals-bc3a4cfe.min.js",
+      "_date-intervals-9c7e7daa.min.js",
       "_WidgetReportError-6f8f932a.min.js",
       "_LaunchWizardButton-f1a3ec20.min.js",
-      "_index-ce5c3741.min.js"
+      "_index-379f8539.min.js"
     ],
     "isEntry": true,
     "src": "src/modules/frontend/frontend.js"
@@ -1183,6 +1187,7 @@
       "img/dimensions-report-screen.png",
       "img/media-report-upsell.png",
       "img/exception-report-screen.png",
+      "img/custom-events-report-screen.png",
       "img/forms-screen.png",
       "img/optimize-screen.png",
       "img/custom-dimensions-screen.png",
@@ -1244,11 +1249,11 @@
     "file": "js/reports.min.js",
     "imports": [
       "_vendor-c9947851.min.js",
-      "_date-intervals-bc3a4cfe.min.js",
-      "_report-table-helper-e438d40d.min.js",
+      "_date-intervals-9c7e7daa.min.js",
+      "_report-table-helper-aa1e7cd5.min.js",
       "_SettingsInfoTooltip-4146a64e.min.js",
-      "_index-661bdf2b.min.js",
-      "_index-ce5c3741.min.js",
+      "_index-c6daa0c6.min.js",
+      "_index-379f8539.min.js",
       "_ContentIconList-9bc7f2a5.min.js",
       "_LaunchWizardButton-f1a3ec20.min.js",
       "_exactmetrics-icons-497ded17.min.js"
@@ -1280,7 +1285,7 @@
       "img/about-icon-gdpr.png",
       "img/about-icon-addons-em.png",
       "img/about-icon-ecommerce.png",
-      "img/about-team-photo.png",
+      "img/about-team.jpg",
       "img/em-logo.png",
       "img/about-getting-started-video.png",
       "img/testimonial-image-1.png",
@@ -1379,6 +1384,7 @@
       "img/dimensions-report-screen.png",
       "img/media-report-upsell.png",
       "img/exception-report-screen.png",
+      "img/custom-events-report-screen.png",
       "img/forms-screen.png",
       "img/optimize-screen.png",
       "img/custom-dimensions-screen.png",
@@ -1441,10 +1447,10 @@
     "file": "js/settings.min.js",
     "imports": [
       "_vendor-c9947851.min.js",
-      "_index-ce5c3741.min.js",
+      "_index-379f8539.min.js",
       "_ContentIconList-9bc7f2a5.min.js",
       "_AboutTestimonialsSlider-d7f03651.min.js",
-      "_index-661bdf2b.min.js",
+      "_index-c6daa0c6.min.js",
       "_LaunchWizardButton-f1a3ec20.min.js",
       "_SettingsInfoTooltip-4146a64e.min.js",
       "_exactmetrics-icons-497ded17.min.js"
@@ -1489,6 +1495,7 @@
       "img/dimensions-report-screen.png",
       "img/media-report-upsell.png",
       "img/exception-report-screen.png",
+      "img/custom-events-report-screen.png",
       "img/forms-screen.png",
       "img/optimize-screen.png",
       "img/custom-dimensions-screen.png",
@@ -1551,11 +1558,11 @@
     "file": "js/widget.min.js",
     "imports": [
       "_vendor-c9947851.min.js",
-      "_date-intervals-bc3a4cfe.min.js",
-      "_report-table-helper-e438d40d.min.js",
+      "_date-intervals-9c7e7daa.min.js",
+      "_report-table-helper-aa1e7cd5.min.js",
       "_SettingsInfoTooltip-4146a64e.min.js",
       "_WidgetReportError-6f8f932a.min.js",
-      "_index-ce5c3741.min.js",
+      "_index-379f8539.min.js",
       "_exactmetrics-icons-497ded17.min.js"
     ],
     "isEntry": true,
@@ -1580,7 +1587,7 @@
       "fonts/icons.woff",
       "fonts/icons.ttf",
       "fonts/icons.otf",
-      "img/logo-ExactMetrics@2x.png",
+      "img/logo-ExactMetrics@2x2.png",
       "img/icon-smile.png",
       "img/wpforms.png",
       "img/forms-screen.png",
@@ -1592,7 +1599,7 @@
       "img/about-icon-gdpr.png",
       "img/about-icon-addons-em.png",
       "img/about-icon-ecommerce.png",
-      "img/about-team-photo.png",
+      "img/about-team.jpg",
       "img/em-logo.png",
       "img/about-getting-started-video.png",
       "img/testimonial-image-1.png",
@@ -1624,6 +1631,7 @@
       "img/dimensions-report-screen.png",
       "img/media-report-upsell.png",
       "img/exception-report-screen.png",
+      "img/custom-events-report-screen.png",
       "img/optimize-screen.png",
       "img/custom-dimensions-screen.png",
       "img/forms-wpforms-upsell.png",
@@ -1637,7 +1645,7 @@
       "_vendor-c9947851.min.js",
       "_AboutTestimonialsSlider-d7f03651.min.js",
       "_SettingsInfoTooltip-4146a64e.min.js",
-      "_index-ce5c3741.min.js",
+      "_index-379f8539.min.js",
       "_ContentIconList-9bc7f2a5.min.js",
       "_LaunchWizardButton-f1a3ec20.min.js"
     ],

@@ -47,6 +47,10 @@ add_action('init', function () {
 		require_once EXACTMETRICS_PLUGIN_DIR . 'lite/includes/admin/reports/report-summaries.php';
 		$summaries = new ExactMetrics_Report_Summaries();
 		ExactMetrics()->reporting->add_report( $summaries );
+		
+		require_once EXACTMETRICS_PLUGIN_DIR . 'lite/includes/admin/reports/report-ecommerce-product-feed.php';
+		$ecommerce_product_feed = new ExactMetrics_Report_Ecommerce_Product_Feed();
+		ExactMetrics()->reporting->add_report( $ecommerce_product_feed );
 
 		// Email summaries related classes
 		require_once EXACTMETRICS_PLUGIN_DIR . 'lite/includes/emails/summaries-infoblocks.php';
