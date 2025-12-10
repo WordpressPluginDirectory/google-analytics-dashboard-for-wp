@@ -68,15 +68,15 @@
       "_vendor-c9947851.min.js"
     ]
   },
-  "_index-c6daa0c6.min.js": {
+  "_index-b88e1887.min.js": {
     "assets": [
       "img/logo-ExactMetrics.png",
-      "img/logo-ExactMetrics@2x.png",
+      "img/logo-ExactMetrics@2x2.png",
       "img/logo-exactmetrics-agency.svg",
       "img/logo-exactmetrics-pro.svg",
       "img/logo-exactmetrics-plus.svg",
       "img/icon-info.svg",
-      "img/logo-ExactMetrics@2x2.png",
+      "img/logo-ExactMetrics@2x.png",
       "fonts/Roboto-Regular.woff2",
       "fonts/Roboto-Bold.woff2",
       "fonts/lato-regular-webfont.woff",
@@ -96,7 +96,7 @@
     "css": [
       "css/index.css"
     ],
-    "file": "js/chunks/index-c6daa0c6.min.js",
+    "file": "js/chunks/index-b88e1887.min.js",
     "imports": [
       "_vendor-c9947851.min.js",
       "_ContentIconList-9bc7f2a5.min.js",
@@ -436,7 +436,7 @@
     "src": "src/assets/img/exactmetrics/loading-background.jpg"
   },
   "src/assets/img/exactmetrics/logo-ExactMetrics@2x.png": {
-    "file": "img/logo-ExactMetrics@2x2.png",
+    "file": "img/logo-ExactMetrics@2x.png",
     "src": "src/assets/img/exactmetrics/logo-ExactMetrics@2x.png"
   },
   "src/assets/img/exactmetrics/media-report-upsell.png": {
@@ -470,6 +470,10 @@
   "src/assets/img/exactmetrics/pp-theme-widget-icons.png": {
     "file": "img/pp-theme-widget-icons.png",
     "src": "src/assets/img/exactmetrics/pp-theme-widget-icons.png"
+  },
+  "src/assets/img/exactmetrics/pretty-links-logo-white.svg": {
+    "file": "img/pretty-links-logo-white.svg",
+    "src": "src/assets/img/exactmetrics/pretty-links-logo-white.svg"
   },
   "src/assets/img/exactmetrics/publishers-screen.png": {
     "file": "img/publishers-screen.png",
@@ -628,7 +632,7 @@
     "src": "src/assets/img/logo-ExactMetrics.png"
   },
   "src/assets/img/logo-ExactMetrics@2x.png": {
-    "file": "img/logo-ExactMetrics@2x.png",
+    "file": "img/logo-ExactMetrics@2x2.png",
     "src": "src/assets/img/logo-ExactMetrics@2x.png"
   },
   "src/assets/img/logo-ExactMetrics.png": {
@@ -766,10 +770,6 @@
   "src/assets/img/popular-posts/theme-widget-8.jpg": {
     "file": "img/theme-widget-8.jpg",
     "src": "src/assets/img/popular-posts/theme-widget-8.jpg"
-  },
-  "src/assets/img/pretty-links-logo-white.svg": {
-    "file": "img/pretty-links-logo-white.svg",
-    "src": "src/assets/img/pretty-links-logo-white.svg"
   },
   "src/assets/img/rcp.png": {
     "file": "img/rcp.png",
@@ -1252,7 +1252,7 @@
       "_date-intervals-9c7e7daa.min.js",
       "_report-table-helper-aa1e7cd5.min.js",
       "_SettingsInfoTooltip-4146a64e.min.js",
-      "_index-c6daa0c6.min.js",
+      "_index-b88e1887.min.js",
       "_index-379f8539.min.js",
       "_ContentIconList-9bc7f2a5.min.js",
       "_LaunchWizardButton-f1a3ec20.min.js",
@@ -1450,7 +1450,7 @@
       "_index-379f8539.min.js",
       "_ContentIconList-9bc7f2a5.min.js",
       "_AboutTestimonialsSlider-d7f03651.min.js",
-      "_index-c6daa0c6.min.js",
+      "_index-b88e1887.min.js",
       "_LaunchWizardButton-f1a3ec20.min.js",
       "_SettingsInfoTooltip-4146a64e.min.js",
       "_exactmetrics-icons-497ded17.min.js"
@@ -1587,7 +1587,7 @@
       "fonts/icons.woff",
       "fonts/icons.ttf",
       "fonts/icons.otf",
-      "img/logo-ExactMetrics@2x2.png",
+      "img/logo-ExactMetrics@2x.png",
       "img/icon-smile.png",
       "img/wpforms.png",
       "img/forms-screen.png",
