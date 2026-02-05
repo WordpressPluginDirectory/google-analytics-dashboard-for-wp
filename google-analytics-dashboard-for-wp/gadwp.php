@@ -5,7 +5,7 @@
  * Plugin URI: https://exactmetrics.com
  * Description: Displays Google Analytics Reports and Real-Time Statistics in your Dashboard. Automatically inserts the tracking code in every page of your website.
  * Author: ExactMetrics
- * Version: 8.10.2
+ * Version: 9.0.0
  * Requires at least: 5.6.0
  * Requires PHP: 7.2
  * Author URI: https://exactmetrics.com/lite/?utm_source=liteplugin&utm_medium=pluginheader&utm_campaign=authoruri&utm_content=7%2E0%2E0
@@ -55,7 +55,7 @@ final class ExactMetrics_Lite {
 	 * @var string $version Plugin version.
 	 */
 
-	public $version = '8.10.2';
+	public $version = '9.0.0';
 
 	/**
 	 * Plugin file.
@@ -226,7 +226,7 @@ final class ExactMetrics_Lite {
 
 			// This does the version to version background upgrade routines and initial install
 			$em_version = get_option( 'exactmetrics_current_version', '5.5.3' );
-			if ( version_compare( $em_version, '7.13.1', '<' ) ) {
+			if ( version_compare( $em_version, '8.11.0', '<' ) ) {
 				exactmetrics_lite_call_install_and_upgrade();
 			}
 
@@ -417,6 +417,9 @@ final class ExactMetrics_Lite {
 		require_once EXACTMETRICS_PLUGIN_DIR . 'includes/options.php';
 		require_once EXACTMETRICS_PLUGIN_DIR . 'includes/helpers.php';
 		require_once EXACTMETRICS_PLUGIN_DIR . 'includes/deprecated.php';
+		require_once EXACTMETRICS_PLUGIN_DIR . 'includes/database/loader.php';
+		require_once EXACTMETRICS_PLUGIN_DIR . 'includes/cache/functions.php';
+		require_once EXACTMETRICS_PLUGIN_DIR . 'includes/cache/cron-handler.php';
 		$exactmetrics_settings = exactmetrics_get_options();
 	}
 
@@ -522,7 +525,7 @@ final class ExactMetrics_Lite {
 
 		if ( is_admin() || ( defined( 'DOING_CRON' ) && DOING_CRON ) ) {
 			// Late loading classes (self instantiating)
-			require_once EXACTMETRICS_PLUGIN_DIR . 'includes/admin/tracking.php';
+			require_once EXACTMETRICS_PLUGIN_DIR . 'includes/admin/class-exactmetrics-usage-tracking.php';
 		}
 
 		if (is_admin()) {
@@ -799,6 +802,9 @@ function exactmetrics_lite_deactivation_hook() {
 	wp_clear_scheduled_hook( 'exactmetrics_usage_tracking_cron' );
 	wp_clear_scheduled_hook( 'exactmetrics_email_summaries_cron' );
 	wp_clear_scheduled_hook( 'exactmetrics_charitable_notice_cron' );
+
+	// Unschedule cache cleanup
+	exactmetrics_unschedule_cache_cleanup();
 }
 
 register_deactivation_hook( __FILE__, 'exactmetrics_lite_deactivation_hook' );

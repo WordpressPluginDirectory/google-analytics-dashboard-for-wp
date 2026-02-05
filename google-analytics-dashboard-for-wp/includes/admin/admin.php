@@ -65,6 +65,27 @@ function exactmetrics_admin_menu()
 	// then settings page
 	add_submenu_page( $parent_slug, __( 'ExactMetrics', 'google-analytics-dashboard-for-wp' ), __( 'Settings', 'google-analytics-dashboard-for-wp' ), 'exactmetrics_save_settings', 'exactmetrics_settings', 'exactmetrics_settings_page' );
 
+	/**
+	 * Output the Custom Dashboard app mount node.
+	 *
+	 * @return void
+	 */
+	function exactmetrics_custom_dashboard_page() {
+		do_action( 'exactmetrics_head' );
+		echo '<div id="exactmetrics-custom-dashboard-app" class="mi-custom-dashboard-app">Loading</div>';
+	}
+
+
+	// Add Custom Views page (Vue 3 app)
+	add_submenu_page(
+		$parent_slug,
+		__( 'Custom Views:', 'google-analytics-dashboard-for-wp' ),
+		__( 'Custom Views', 'google-analytics-dashboard-for-wp' ) . $new_indicator,
+		'exactmetrics_view_dashboard',
+		'exactmetrics_custom_dashboard',
+		'exactmetrics_custom_dashboard_page'
+	);
+
 	// Add dashboard submenu.
 	add_submenu_page( 'index.php', __( 'General Reports:', 'google-analytics-dashboard-for-wp' ), 'ExactMetrics', 'exactmetrics_view_dashboard', 'admin.php?page=exactmetrics_reports' );
 
@@ -118,7 +139,7 @@ function exactmetrics_admin_menu()
 	add_submenu_page($parent_slug, __('SEO', 'google-analytics-dashboard-for-wp'), __('SEO', 'google-analytics-dashboard-for-wp'), 'manage_options', $seo_url);
 
 	// Google PAX
-	add_submenu_page($parent_slug, __('Google Ads', 'google-analytics-dashboard-for-wp'), __('Google Ads', 'google-analytics-dashboard-for-wp'), 'exactmetrics_view_dashboard', $submenu_base . '#/google-ads');
+	add_submenu_page($parent_slug, __('Google Ads', 'google-analytics-dashboard-for-wp'), __('Google Ads', 'google-analytics-dashboard-for-wp') . $new_indicator, 'exactmetrics_view_dashboard', $submenu_base . '#/google-ads');
 
 	// then tools
 	add_submenu_page($parent_slug, __('Tools:', 'google-analytics-dashboard-for-wp'), __('Tools', 'google-analytics-dashboard-for-wp'), 'manage_options', $submenu_base . '#/tools');
@@ -140,10 +161,7 @@ function exactmetrics_admin_menu()
 	add_submenu_page(
 		$parent_slug,
 		__('Privacy Compliance:', 'google-analytics-dashboard-for-wp'),
-		sprintf(
-			'<span class="exactmetrics-sidebar-label--tight">%s</span>' . $new_indicator,
-			__('Privacy Compliance', 'google-analytics-dashboard-for-wp')
-		),
+		__('Privacy Compliance', 'google-analytics-dashboard-for-wp'),
 		'manage_options',
 		$submenu_base . '#/wpconsent'
 	);
@@ -990,6 +1008,13 @@ add_action( 'in_admin_footer', 'exactmetrics_in_admin_footer' );
  * Display notice in admin to install WPConsent.
  */
 function exactmetrics_wpconsent_install_notice() {
+	global $pagenow;
+
+	// Dont show the notice on update page.
+	if ( 'update-core.php' === $pagenow ) {
+		return;
+	}
+
 	// If WPConsent plugin active.
 	if ( function_exists( 'WPConsent' ) ) {
 		return;

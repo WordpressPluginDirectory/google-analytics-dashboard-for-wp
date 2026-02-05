@@ -52,7 +52,7 @@ class ExactMetrics_SiteNotes_Controller {
 		}
 
 		add_filter('exactmetrics_report_overview_data', array($this, 'prepare_data_overview_chart'));
-		add_filter('exactmetrics_report_traffic_sessions_chart_data', array($this, 'prepare_traffic_sessions_chart_data'), 10, 3);
+		add_filter('exactmetrics_report_traffic_sessions_chart_data', array($this, 'prepare_traffic_sessions_chart_data'), 10, 4);
 		add_action('save_post', array($this, 'save_custom_fields'));
 		add_filter('exactmetrics_gutenberg_tool_vars', array($this, 'add_categories_to_editor'));
 		add_action('admin_enqueue_scripts', array($this, 'admin_scripts'));
@@ -1174,12 +1174,14 @@ class ExactMetrics_SiteNotes_Controller {
 	 *
 	 * @return array
 	 */
-	public function prepare_traffic_sessions_chart_data( $data, $start_date, $end_date ) {
-
-		if ( ! isset( $data['data']['sessions_chart'] ) ) {
+	public function prepare_traffic_sessions_chart_data( $data, $start_date, $end_date, $custom_chart_type = null ) {
+		$chart_type = 'sessions_chart';
+		if ( ! isset( $data['data']['sessions_chart'] ) && null === $custom_chart_type ) {
 			return $data;
 		}
-
+		if (  isset( $data['data'][ $custom_chart_type ] ) ) {
+			$chart_type = $custom_chart_type;
+		}
 		$params = array(
 			'per_page' => - 1,
 			'filter'   => array(
@@ -1208,8 +1210,7 @@ class ExactMetrics_SiteNotes_Controller {
 			);
 		}
 
-		$data['data']['sessions_chart']['notes'] = $prepared_notes;
-
+		$data['data'][ $chart_type ]['notes'] = $prepared_notes;
 		return $data;
 	}
 

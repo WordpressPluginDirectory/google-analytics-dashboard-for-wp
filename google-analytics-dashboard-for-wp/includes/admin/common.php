@@ -750,15 +750,14 @@ add_filter( 'exactmetrics_vue_reports_data', 'exactmetrics_year_in_review_check_
  */
 function exactmetrics_yearinreview_dates() {
 	$current_date = wp_date( 'Y-m-d' );
-	$current_year = wp_date( 'Y' );
-	$report_year = $current_year - 1;
-	$report_year = 2024;
-	$next_year = 2025;
+	$report_year = 2025;
+	$current_year = (string) $report_year + 1;
 	$show_report = false;
 
-	$next_year = (string) $report_year + 1;
 	$show_report_start_date = wp_date( 'Y-m-d', strtotime( 'Jan 01, ' . $current_year ) );
 	$show_report_end_date = wp_date( 'Y-m-d', strtotime( 'Jan 14, ' . $current_year ) );
+
+	// Check if current date is between january 1st and january 14th.
 	if (
 		$current_date >= $show_report_start_date
 		&& $current_date <= $show_report_end_date
@@ -772,7 +771,7 @@ function exactmetrics_yearinreview_dates() {
 
 	return array(
 		'report_year' => $report_year,
-		'next_year' => $next_year,
+		'next_year'   => $current_year,
 		'show_report' => apply_filters( 'exactmetrics_yearinreview_show_report', $show_report ),
 	);
 }

@@ -48,7 +48,7 @@ jQuery(document).ready(function ($) {
     );
   });
 
-  $('div.wp-menu-name > .exactmetrics-menu-notification-indicator').click(function (event) {
+  $('div.wp-menu-name > .exactmetrics-menu-notification-indicator').on('click', function (event) {
     event.preventDefault();
     event.stopPropagation();
 
