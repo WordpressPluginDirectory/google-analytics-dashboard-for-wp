@@ -4,7 +4,7 @@ Donate link: http://www.wpbeginner.com/wpbeginner-needs-your-help/
 Tags: analytics,google analytics,google analytics dashboard,google analytics plugin,website stats
 Requires at least: 5.6.0
 Tested up to: 6.9.0
-Stable tag: 9.0.0
+Stable tag: 9.0.1
 Requires PHP: 7.2
 License: GPL v3
 

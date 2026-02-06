@@ -75,17 +75,6 @@ function exactmetrics_admin_menu()
 		echo '<div id="exactmetrics-custom-dashboard-app" class="mi-custom-dashboard-app">Loading</div>';
 	}
 
-
-	// Add Custom Views page (Vue 3 app)
-	add_submenu_page(
-		$parent_slug,
-		__( 'Custom Views:', 'google-analytics-dashboard-for-wp' ),
-		__( 'Custom Views', 'google-analytics-dashboard-for-wp' ) . $new_indicator,
-		'exactmetrics_view_dashboard',
-		'exactmetrics_custom_dashboard',
-		'exactmetrics_custom_dashboard_page'
-	);
-
 	// Add dashboard submenu.
 	add_submenu_page( 'index.php', __( 'General Reports:', 'google-analytics-dashboard-for-wp' ), 'ExactMetrics', 'exactmetrics_view_dashboard', 'admin.php?page=exactmetrics_reports' );
 

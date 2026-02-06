@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Google Analytics Dashboard for WP (GADWP) plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Google Analytics Dashboard for WP (GADWP) 9.0.0\n"
+"Project-Id-Version: Google Analytics Dashboard for WP (GADWP) 9.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/google-analytics-dashboard-for-wp-working-dir\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-02-03T16:49:17+00:00\n"
+"POT-Creation-Date: 2026-02-05T15:04:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.13.0-alpha\n"
 "X-Domain: google-analytics-dashboard-for-wp\n"
@@ -384,8 +384,8 @@ msgstr ""
 msgid "Abandonments"
 msgstr ""
 
-#: includes/admin/admin.php:170
-#: includes/admin/admin.php:321
+#: includes/admin/admin.php:159
+#: includes/admin/admin.php:310
 msgid "About Us"
 msgstr ""
 
@@ -395,7 +395,7 @@ msgstr ""
 msgid "activate"
 msgstr ""
 
-#: includes/admin/admin.php:1058
+#: includes/admin/admin.php:1047
 msgid "Activate"
 msgstr ""
 
@@ -2512,7 +2512,7 @@ msgstr ""
 msgid "Get insights about your website by simply asking"
 msgstr ""
 
-#: includes/admin/admin.php:415
+#: includes/admin/admin.php:404
 #: includes/admin/notifications/notification-upgrade-eu-traffic.php:86
 #: includes/admin/notifications/notification-upgrade-for-custom-dimensions.php:31
 #: includes/admin/notifications/notification-upgrade-for-email-summaries.php:36
@@ -2582,7 +2582,7 @@ msgstr ""
 msgid "Goal:"
 msgstr ""
 
-#: includes/admin/admin.php:142
+#: includes/admin/admin.php:131
 msgid "Google Ads"
 msgstr ""
 
@@ -2925,8 +2925,8 @@ msgstr ""
 msgid "Install ExactMetrics"
 msgstr ""
 
-#: includes/admin/admin.php:920
-#: includes/admin/admin.php:1060
+#: includes/admin/admin.php:909
+#: includes/admin/admin.php:1049
 msgid "Install Now"
 msgstr ""
 
@@ -3254,8 +3254,8 @@ msgstr ""
 msgid "Learn how visitors arrive to your website and which are the most engaged or profitable."
 msgstr ""
 
-#: includes/admin/admin.php:550
-#: includes/admin/admin.php:1064
+#: includes/admin/admin.php:539
+#: includes/admin/admin.php:1053
 #: includes/admin/common.php:659
 #: includes/admin/common.php:685
 #: includes/admin/common.php:717
@@ -3385,7 +3385,7 @@ msgstr ""
 msgid "Make your ExactMetrics campaign links prettier with Pretty Links!"
 msgstr ""
 
-#: includes/admin/admin.php:1052
+#: includes/admin/admin.php:1041
 msgid "Make Your Website Analytics Compliant with Privacy Laws"
 msgstr ""
 
@@ -3787,7 +3787,7 @@ msgstr ""
 msgid "Note: You will be transfered to %1$s.com to complete the setup wizard."
 msgstr ""
 
-#: includes/admin/admin.php:552
+#: includes/admin/admin.php:541
 #: lite/includes/admin/dashboard-widget.php:150
 msgid "Note: You will be transfered to ExactMetrics.com to complete the setup wizard."
 msgstr ""
@@ -4195,7 +4195,7 @@ msgstr ""
 msgid "Please set up custom dimension \"%s\" for this report to work."
 msgstr ""
 
-#: includes/admin/admin.php:547
+#: includes/admin/admin.php:536
 msgid "Please Setup Website Analytics to See Audience Insights"
 msgstr ""
 
@@ -4223,7 +4223,7 @@ msgstr ""
 msgid "Popular marketing campaign"
 msgstr ""
 
-#: includes/admin/admin.php:125
+#: includes/admin/admin.php:114
 msgid "Popular Posts"
 msgstr ""
 
@@ -4305,7 +4305,7 @@ msgstr ""
 msgid "Privacy Guard"
 msgstr ""
 
-#: includes/admin/admin.php:1053
+#: includes/admin/admin.php:1042
 msgid "Privacy laws like GDPR, CCPA, and others require user consent before you can track visitors. Our sister plugin, WPConsent, helps you add a smart cookie consent banner for better privacy compliance with Google Analytics."
 msgstr ""
 
@@ -4614,7 +4614,7 @@ msgid "Report Unavailable"
 msgstr ""
 
 #: includes/admin/admin.php:62
-#: includes/admin/admin.php:305
+#: includes/admin/admin.php:294
 msgid "Reports"
 msgstr ""
 
@@ -5120,7 +5120,7 @@ msgid "Set Up WPConsent"
 msgstr ""
 
 #: includes/admin/admin.php:66
-#: includes/admin/admin.php:408
+#: includes/admin/admin.php:397
 msgid "Settings"
 msgstr ""
 
@@ -5201,7 +5201,7 @@ msgstr ""
 msgid "Site note is updated successfully."
 msgstr ""
 
-#: includes/admin/admin.php:107
+#: includes/admin/admin.php:96
 msgid "Site Notes"
 msgstr ""
 
@@ -5431,9 +5431,9 @@ msgstr ""
 msgid "Sun"
 msgstr ""
 
-#: includes/admin/admin.php:398
-#: includes/admin/admin.php:401
-#: includes/admin/admin.php:979
+#: includes/admin/admin.php:387
+#: includes/admin/admin.php:390
+#: includes/admin/admin.php:968
 msgid "Support"
 msgstr ""
 
@@ -6230,7 +6230,7 @@ msgstr ""
 msgid "Upgrade and Unlock"
 msgstr ""
 
-#: includes/admin/admin.php:924
+#: includes/admin/admin.php:913
 #: includes/admin/notifications/notification-upgrade-for-form-conversion.php:31
 #: includes/admin/notifications/notification-upgrade-for-search-console.php:32
 #: includes/admin/notifications/notification-upgrade-to-pro-five-hundred-session.php:44
@@ -6255,7 +6255,7 @@ msgstr ""
 msgid "Upgrade to ExactMetrics Pro and unlock all the awesome features."
 msgstr ""
 
-#: includes/admin/admin.php:179
+#: includes/admin/admin.php:168
 #: includes/admin/notifications/notification-upgrade-to-pro-high-traffic.php:41
 #: includes/admin/notifications/notification-upgrade-to-pro.php:33
 msgid "Upgrade to Pro"
@@ -6363,7 +6363,7 @@ msgstr ""
 msgid "User Journeys"
 msgstr ""
 
-#: includes/admin/admin.php:156
+#: includes/admin/admin.php:145
 msgid "UserFeedback"
 msgstr ""
 
@@ -6954,11 +6954,11 @@ msgstr ""
 msgid "Your license has expired."
 msgstr ""
 
-#: includes/admin/admin.php:578
+#: includes/admin/admin.php:567
 msgid "Your license key for ExactMetrics has been disabled. Please use a different key."
 msgstr ""
 
-#: includes/admin/admin.php:580
+#: includes/admin/admin.php:569
 #: includes/admin/api-auth.php:311
 msgid "Your license key for ExactMetrics is invalid. The key no longer exists or the user associated with the key has been deleted. Please use a different key."
 msgstr ""
@@ -7705,291 +7705,283 @@ msgid "NEW"
 msgstr ""
 
 #: includes/admin/admin.php:62
-#: includes/admin/admin.php:90
-#: includes/admin/admin.php:305
+#: includes/admin/admin.php:79
+#: includes/admin/admin.php:294
 msgid "General Reports:"
 msgstr ""
 
-#: includes/admin/admin.php:82
-msgid "Custom Views:"
-msgstr ""
-
-#: includes/admin/admin.php:83
-msgid "Custom Views"
-msgstr ""
-
-#: includes/admin/admin.php:107
+#: includes/admin/admin.php:96
 msgid "Site Notes:"
 msgstr ""
 
 #. translators: Icon
-#: includes/admin/admin.php:113
+#: includes/admin/admin.php:102
 msgid "AI Insights:"
 msgstr ""
 
 #. translators: Icon
-#: includes/admin/admin.php:113
+#: includes/admin/admin.php:102
 #, php-format
 msgid "%s AI Insights"
 msgstr ""
 
 #. translators: Placeholder adds a svg icon
-#: includes/admin/admin.php:121
+#: includes/admin/admin.php:110
 msgid "Conversations AI:"
 msgstr ""
 
 #. translators: Placeholder adds a svg icon
-#: includes/admin/admin.php:121
+#: includes/admin/admin.php:110
 #, php-format
 msgid "%s Conversations AI"
 msgstr ""
 
-#: includes/admin/admin.php:125
+#: includes/admin/admin.php:114
 msgid "Popular Posts:"
 msgstr ""
 
-#: includes/admin/admin.php:130
+#: includes/admin/admin.php:119
 msgid "User Journey:"
 msgstr ""
 
-#: includes/admin/admin.php:130
+#: includes/admin/admin.php:119
 msgid "User Journey"
 msgstr ""
 
-#: includes/admin/admin.php:139
-#: includes/admin/admin.php:313
+#: includes/admin/admin.php:128
+#: includes/admin/admin.php:302
 msgid "SEO"
 msgstr ""
 
-#: includes/admin/admin.php:145
+#: includes/admin/admin.php:134
 msgid "Tools:"
 msgstr ""
 
-#: includes/admin/admin.php:145
+#: includes/admin/admin.php:134
 msgid "Tools"
 msgstr ""
 
-#: includes/admin/admin.php:150
-#: includes/admin/admin.php:316
+#: includes/admin/admin.php:139
+#: includes/admin/admin.php:305
 msgid "Addons:"
 msgstr ""
 
-#: includes/admin/admin.php:150
-#: includes/admin/admin.php:316
+#: includes/admin/admin.php:139
+#: includes/admin/admin.php:305
 msgid "Addons"
 msgstr ""
 
-#: includes/admin/admin.php:155
+#: includes/admin/admin.php:144
 msgid "UserFeedback:"
 msgstr ""
 
-#: includes/admin/admin.php:163
+#: includes/admin/admin.php:152
 msgid "Privacy Compliance:"
 msgstr ""
 
-#: includes/admin/admin.php:164
+#: includes/admin/admin.php:153
 msgid "Privacy Compliance"
 msgstr ""
 
-#: includes/admin/admin.php:170
-#: includes/admin/admin.php:321
+#: includes/admin/admin.php:159
+#: includes/admin/admin.php:310
 msgid "About Us:"
 msgstr ""
 
-#: includes/admin/admin.php:179
+#: includes/admin/admin.php:168
 msgid "Upgrade to Pro:"
 msgstr ""
 
-#: includes/admin/admin.php:192
+#: includes/admin/admin.php:181
 msgid "Earth Day"
 msgstr ""
 
-#: includes/admin/admin.php:200
+#: includes/admin/admin.php:189
 msgid "Cinco De Mayo!"
 msgstr ""
 
-#: includes/admin/admin.php:208
+#: includes/admin/admin.php:197
 msgid "Upgrade to GA4"
 msgstr ""
 
-#: includes/admin/admin.php:216
+#: includes/admin/admin.php:205
 msgid "Summer Sale"
 msgstr ""
 
-#: includes/admin/admin.php:224
+#: includes/admin/admin.php:213
 msgid "Fortune Cookie Day"
 msgstr ""
 
-#: includes/admin/admin.php:232
+#: includes/admin/admin.php:221
 msgid "Halloween Sale"
 msgstr ""
 
-#: includes/admin/admin.php:301
-#: includes/admin/admin.php:303
+#: includes/admin/admin.php:290
+#: includes/admin/admin.php:292
 msgid "Network Settings:"
 msgstr ""
 
-#: includes/admin/admin.php:303
-#: includes/admin/admin.php:406
+#: includes/admin/admin.php:292
+#: includes/admin/admin.php:395
 msgid "Network Settings"
 msgstr ""
 
-#: includes/admin/admin.php:313
+#: includes/admin/admin.php:302
 msgid "SEO:"
 msgstr ""
 
-#: includes/admin/admin.php:393
+#: includes/admin/admin.php:382
 msgid "ExactMetrics Knowledge Base"
 msgstr ""
 
-#: includes/admin/admin.php:393
+#: includes/admin/admin.php:382
 msgid "Documentation"
 msgstr ""
 
 #. Translators: Placeholders add a link to the wordpress.org repository.
-#: includes/admin/admin.php:488
+#: includes/admin/admin.php:477
 #, php-format
 msgid "Please rate %1$sExactMetrics%2$s %3$s on %4$sWordPress.org%5$s to help us spread the word."
 msgstr ""
 
-#: includes/admin/admin.php:519
+#: includes/admin/admin.php:508
 msgid "Urgent: Your Website is Not Tracking Any Google Analytics Data!"
 msgstr ""
 
-#: includes/admin/admin.php:520
+#: includes/admin/admin.php:509
 msgid "Google Analytics 3 (UA) and support was sunset on July 1, 2023. Your website is currently NOT tracking any analytics. </br>Create or connect a new Google Analytics 4 property immediately to start tracking."
 msgstr ""
 
-#: includes/admin/admin.php:530
+#: includes/admin/admin.php:519
 msgid "Learn How to Create a GA4 Property"
 msgstr ""
 
-#: includes/admin/admin.php:533
+#: includes/admin/admin.php:522
 msgid "Connect a Property"
 msgstr ""
 
-#: includes/admin/admin.php:548
+#: includes/admin/admin.php:537
 msgid "Please Connect Your Website to ExactMetrics"
 msgstr ""
 
-#: includes/admin/admin.php:553
+#: includes/admin/admin.php:542
 msgid "ExactMetrics, the WordPress Analytics plugin, helps you easily connect your website to Google Analytics, so that you can see how people find and use your website. Over 1 million smart website owners use ExactMetrics to grow faster."
 msgstr ""
 
 #. Translators: Adds a link to retrieve the license.
-#: includes/admin/admin.php:564
+#: includes/admin/admin.php:553
 #, php-format
 msgid "Warning: No valid license key has been entered for ExactMetrics. You are currently not getting updates, and are not able to view reports. %1$sPlease click here to enter your license key and begin receiving updates and reports.%2$s"
 msgstr ""
 
 #. Translators: Adds a link to the license renewal.
-#: includes/admin/admin.php:576
+#: includes/admin/admin.php:565
 #, php-format
 msgid "Your license key for ExactMetrics has expired. %1$sPlease click here to renew your license key.%2$s"
 msgstr ""
 
 #. Translators: Adds a link to renew license.
-#: includes/admin/admin.php:585
+#: includes/admin/admin.php:574
 #, php-format
 msgid "Your network license key for ExactMetrics has expired. %1$sPlease click here to renew your license key.%2$s"
 msgstr ""
 
-#: includes/admin/admin.php:587
+#: includes/admin/admin.php:576
 msgid "Your network license key for ExactMetrics has been disabled. Please use a different key."
 msgstr ""
 
-#: includes/admin/admin.php:589
+#: includes/admin/admin.php:578
 msgid "Your network license key for ExactMetrics is invalid. The key no longer exists or the user associated with the key has been deleted. Please use a different key."
 msgstr ""
 
 #. Translators: Placeholders add the PHP version, a link to the ExactMetrics blog and a line break.
-#: includes/admin/admin.php:611
+#: includes/admin/admin.php:600
 #, php-format
 msgid "Your site is running an outdated, insecure version of PHP (%1$s), which could be putting your site at risk for being hacked.%4$sWordPress stopped supporting your PHP version in April, 2019.%4$sUpdating PHP only takes a few minutes and will make your website significantly faster and more secure.%4$s%2$sLearn more about updating PHP%3$s"
 msgstr ""
 
 #. Translators: Placeholders add the PHP version, a link to the ExactMetrics blog and a line break.
-#: includes/admin/admin.php:614
+#: includes/admin/admin.php:603
 #, php-format
 msgid "Your site is running an outdated, insecure version of PHP (%1$s), which could be putting your site at risk for being hacked.%4$sWordPress stopped supporting your PHP version in November, 2019.%4$sUpdating PHP only takes a few minutes and will make your website significantly faster and more secure.%4$s%2$sLearn more about updating PHP%3$s"
 msgstr ""
 
 #. Translators: Placeholders add the PHP version, a link to the ExactMetrics blog and a line break.
-#: includes/admin/admin.php:617
+#: includes/admin/admin.php:606
 #, php-format
 msgid "Your site is running an outdated, insecure version of PHP (%1$s), which could be putting your site at risk for being hacked.%4$sWordPress is working towards discontinuing support for your PHP version.%4$sUpdating PHP only takes a few minutes and will make your website significantly faster and more secure.%4$s%2$sLearn more about updating PHP%3$s"
 msgstr ""
 
 #. Translators: Placeholders add links to the settings panel.
-#: includes/admin/admin.php:695
+#: includes/admin/admin.php:684
 #, php-format
 msgid "Important: You are currently using manual GA4 Measurement ID output. We highly recommend %1$sauthenticating with ExactMetrics%2$s so that you can access our new reporting area and take advantage of new ExactMetrics features."
 msgstr ""
 
 #. Translators: Placeholders add links to the settings panel.
-#: includes/admin/admin.php:700
+#: includes/admin/admin.php:689
 #, php-format
 msgid "Click %1$shere%2$s to reauthenticate to be able to access reports. For more information why this is required, see our %3$sblog post%4$s."
 msgstr ""
 
 #. Translators: Placeholders add a link to the ExactMetrics website.
-#: includes/admin/admin.php:747
-#: includes/admin/admin.php:799
+#: includes/admin/admin.php:736
+#: includes/admin/admin.php:788
 #, php-format
 msgid "%1$sGet ExactMetrics Pro%2$s"
 msgstr ""
 
-#: includes/admin/admin.php:754
+#: includes/admin/admin.php:743
 msgid "Save <span>50%</span> Off ExactMetrics Pro"
 msgstr ""
 
-#: includes/admin/admin.php:765
+#: includes/admin/admin.php:754
 msgid "Add eCommerce Analytics to your WooCommerce Store"
 msgstr ""
 
-#: includes/admin/admin.php:766
+#: includes/admin/admin.php:755
 msgid "Unlock all of our advanced eCommerce features specifically designed to help your store make more money.."
 msgstr ""
 
-#: includes/admin/admin.php:767
+#: includes/admin/admin.php:756
 msgid "ExactMetrics Pro users instantly gain access to valuable insights such as average order value, conversion rates, as well as marketing performance with UTM tracking."
 msgstr ""
 
-#: includes/admin/admin.php:768
+#: includes/admin/admin.php:757
 msgid "And by upgrading, Pro users also get enhanced tracking for Forms, User Journeys, PPC Pixels, Custom UserID tracking, SEO Reports, and much more."
 msgstr ""
 
-#: includes/admin/admin.php:769
+#: includes/admin/admin.php:758
 msgid "Start making better data-driven decisions today!"
 msgstr ""
 
 #. Translators: Adds a link to the settings panel.
-#: includes/admin/admin.php:815
+#: includes/admin/admin.php:804
 #, php-format
 msgid "Warning: ExactMetrics found cross-domain settings in the custom code field and converted them to the new settings structure.  %1$sPlease click here to review and remove the code no longer needed.%2$s"
 msgstr ""
 
 #. translators: Placeholders add a link to an article.
-#: includes/admin/admin.php:892
+#: includes/admin/admin.php:881
 #, php-format
 msgid "Your Measurement Protocol API Secret is currently left blank. To see more advanced analytics please enter a Measurement API Secret. %1$sLearn how to find your API Secret%2$s."
 msgstr ""
 
 #. translators: Placeholders link to addons page.
-#: includes/admin/admin.php:930
+#: includes/admin/admin.php:919
 #, php-format
 msgid "We've detected you have our %1$sExactMetrics Ads%2$s addon activated. Please activate our %3$sPPC Tracking%4$s addon for more advanced features and powerful integrations."
 msgstr ""
 
-#: includes/admin/admin.php:984
+#: includes/admin/admin.php:973
 msgid "Docs"
 msgstr ""
 
-#: includes/admin/admin.php:989
+#: includes/admin/admin.php:978
 msgid "Free Plugins"
 msgstr ""
 
-#: includes/admin/admin.php:996
+#: includes/admin/admin.php:985
 #, php-format
 msgid "Made with %1$s by the ExactMetrics Team"
 msgstr ""
