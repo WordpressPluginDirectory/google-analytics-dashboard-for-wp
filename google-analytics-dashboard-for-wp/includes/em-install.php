@@ -96,10 +96,6 @@ class ExactMetrics_Install {
 			if ( version_compare( $version, '6.5.0', '<' ) ) {
 				$this->v650_upgrades();
 			}
-			
-			if ( version_compare( $version, '8.11.0', '<' ) ) {
-				$this->v8110_upgrades();
-			}
 
 			// Do not use. See exactmetrics_after_install_routine comment below.
 			do_action( 'exactmetrics_after_existing_upgrade_routine', $version );
@@ -214,10 +210,6 @@ class ExactMetrics_Install {
 		);
 
 		update_option( 'exactmetrics_over_time', $data, false );
-		
-		/*  Custom DB Schemas */
-		// Tracking
-		ExactMetrics_Tracking::setup_tracking_schema();
 
 		// Let addons + MI Pro/Lite hook in here. @todo: doc as nonpublic
 		do_action( 'exactmetrics_after_new_install_routine', EXACTMETRICS_VERSION );
@@ -355,10 +347,10 @@ class ExactMetrics_Install {
 
 			// Schedule again.
 			$schedule           = array();
-			$schedule['day']    = rand( 0, 1 );
-			$schedule['hour']   = rand( 0, 23 );
-			$schedule['minute'] = rand( 0, 59 );
-			$schedule['second'] = rand( 0, 59 );
+			$schedule['day']    = wp_rand( 0, 1 );
+			$schedule['hour']   = wp_rand( 0, 23 );
+			$schedule['minute'] = wp_rand( 0, 59 );
+			$schedule['second'] = wp_rand( 0, 59 );
 			$schedule['offset'] = ( $schedule['day'] * DAY_IN_SECONDS ) +
 								  ( $schedule['hour'] * HOUR_IN_SECONDS ) +
 								  ( $schedule['minute'] * MINUTE_IN_SECONDS ) +
@@ -480,18 +472,5 @@ class ExactMetrics_Install {
 		if ( empty( $this->new_settings['gtagtracker_compatibility_mode'] ) ) {
 			$this->new_settings['gtagtracker_compatibility_mode'] = true;
 		}
-	}
-	
-	/**
-	 * Upgrade routine for 8.10.0
-	 * @return void
-	 */
-	public function v8110_upgrades() {
-		if ( !class_exists( 'ExactMetrics_Tracking' ) ) {
-			require_once EXACTMETRICS_PLUGIN_DIR . 'includes/tracking/class-exactmetrics-tracking.php';
-		}
-		
-		// Create new tracking DB schema
-		ExactMetrics_Tracking::setup_tracking_schema();
 	}
 }
